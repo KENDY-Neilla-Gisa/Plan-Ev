@@ -198,46 +198,58 @@ section{
     line-height: 2;
 }
 
-.price .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-}
-
-.price .box-container .box{
-    padding: 2rem 0;
-    background: #333;
-    border-radius: .5rem;
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
     text-align: center;
 }
 
-.price .box-container .box:hover{
-    transform: scale(1.03);
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.price .box-container .box .title{
-    background: var(--main-color);
+.contact form .inputBox input,
+.contact form textarea{
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 1.5rem 0;
+    text-transform: none;
+}
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+    color: #eee;
+    text-transform: capitalize;
+}
+.contact form .inputBox input:focus,
+.contact form textarea:focus{
+    background: #444;
+}
+.contact form .inputBox input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.footer{
+    background: #111;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #222;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
     font-size: 2rem;
 }
-
-.price .box-container .box .amount{
-    color: #fff;
-    padding-top: 2rem;
-    font-size: 4rem;
+.footer .credit span{
+    color: var(--main-color);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------media queries------ */
 
@@ -275,5 +287,8 @@ section{
 @media (max-width: 450px){
     html{
         font-size: 50%;
+    }
+    .contact form .inputBox input{
+        width: 100%;
     }
 }
