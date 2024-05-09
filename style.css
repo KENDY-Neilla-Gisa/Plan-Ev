@@ -129,6 +129,24 @@ section{
     text-transform: uppercase;
 }
 
+.slide img{
+    width: 400px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.home-slider .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+} 
+
+.home-slider .wrapper .slide{
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: 0 0 0 0;
+}
+
 .service .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
