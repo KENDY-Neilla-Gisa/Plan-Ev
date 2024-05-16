@@ -111,6 +111,21 @@ section{
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .home .content{
     text-align: center;
     padding-top: 6rem;
@@ -347,6 +362,10 @@ section{
 }
 
 @media (max-width: 768px) {
+
+    #menu-bars{
+        display: initial;
+    }
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -357,13 +376,17 @@ section{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: 0.2s linear;
     }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
       
     .header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
       
     .header .navbar a {
-        display: block;
+        display: flex;
         font-size: 2rem;
         background: #222;
         border-radius: 0.5rem;
@@ -372,37 +395,37 @@ section{
     }
     .home .content h3 {
         font-size: 3rem;
-      }
+    }
     
-      .home-slider .wrapper {
+    .home-slider .wrapper {
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-      }
+    }
     
-      .home-slider .wrapper .slide img {
+    .home-slider .wrapper .slide img {
         width: 100%;
         height: auto;
-      }
-      .about .row {
+    }
+    .about .row {
         flex-direction: column;
-      }
+    }
     
-      .about .row .image img {
+    .about .row .image img {
         width: 100%;
-      }
+    }
     
-      .about .row .content {
+    .about .row .content {
         flex: 1 1 auto;
         padding: 2rem;
-      }
-    
-      .about .row .content h3 {
-        font-size: 3rem;
-      }
-    
-      .about .row .content p {
-        font-size: 1.4rem;
-      }
     }
+    
+    .about .row .content h3 {
+        font-size: 3rem;
+    }
+    
+    .about .row .content p {
+        font-size: 1.4rem;
+    }
+}
       
 
 @media (max-width: 450px){
