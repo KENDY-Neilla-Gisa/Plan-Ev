@@ -328,6 +328,38 @@ section{
     padding-right: .5rem;
 }
 
+.review .box{
+    border-radius: .5rem;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+.review .box .fa-quote-right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+.review .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .contact form{
     max-width: 70rem;
     margin: 1rem auto;
