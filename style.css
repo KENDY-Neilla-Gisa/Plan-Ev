@@ -347,9 +347,32 @@ section{
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    padding-bottom: 1rem;
 }
 
+.review .box .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
+.review .box .user h3{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box .user span{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.review .box p{
+    line-height: 2;
+    color: #eee;
+    padding: .5rem 0;
+    font-size: 1.6rem;
+}
 
 
 
