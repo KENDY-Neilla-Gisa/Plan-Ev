@@ -385,7 +385,6 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .contact form .inputBox input,
 .contact form textarea {
     width: 100%;
@@ -397,22 +396,18 @@ section {
     color: #fff;
     text-transform: none;
 }
-
 .contact form .inputBox input::placeholder,
 .contact form textarea::placeholder {
     color: #eee;
     text-transform: capitalize;
 }
-
 .contact form .inputBox input:focus,
 .contact form textarea:focus {
     background: #444;
 }
-
 .contact form .inputBox input {
     width: 49%;
 }
-
 .contact form textarea {
     resize: none;
 }
